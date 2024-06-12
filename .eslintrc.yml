@@ -18,7 +18,8 @@ parserOptions:
 
 plugins:
   - unused-imports
-
+  - "@typescript-eslint"
+  - prettier
 
 rules:
   no-param-reassign: 0
