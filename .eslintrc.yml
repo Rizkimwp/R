@@ -18,7 +18,6 @@ parserOptions:
 
 plugins:
   - unused-imports
-  - "@typescript-eslint"
 
 
 rules:
