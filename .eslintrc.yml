@@ -17,7 +17,6 @@ parserOptions:
   sourceType: module
 
 plugins:
-  - prettier
   - unused-imports
   - "@typescript-eslint"
 
