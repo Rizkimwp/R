@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { FaAirbnb, FaPhone, FaRocket, FaUserAlt } from 'react-icons/fa'
-  
+
 const Navbar = () => {
   return (
     <div className="fixed top-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-secondary rounded-2xl h-15 z-50 transition-transform duration-300 ease-in-out hover:translate-y-1 hover:shadow-lg ">
@@ -19,7 +19,6 @@ const Navbar = () => {
           </Link>
 
           <Link
-      
             to="project"
             smooth={true}
             duration={700}
@@ -38,9 +37,15 @@ const Navbar = () => {
           >
             EXPERIENCE
           </Link>
-          <a href="#" className=" text-white text-gray-700 px-3 py-2 rounded-md text-sm font-medium  hover:text-navbar">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={700}
+            delay={100}
+            className=" text-white text-gray-700 px-3 py-2 rounded-md text-sm font-medium  hover:text-navbar"
+          >
             CONTACT
-          </a>
+          </Link>
         </div>
         <div className="md:hidden  flex ">
           <Link

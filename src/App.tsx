@@ -7,22 +7,22 @@ import Experience from './content/Experience'
 import TestimonialCarousel from './content/Testimonial'
 import AOS from 'aos'
 import Contact from './content/Contact'
+import Footer from './content/Footer'
 function App() {
   useEffect(() => {
-    AOS.init({
-
-    })
+    AOS.init({})
   }, [])
 
   return (
     <div className="w-5/6">
-      <Navbar />  
+      <Navbar />
       <Jumbotron />
       <Profile />
       <Project />
       <TestimonialCarousel />
       <Experience />
-      <Contact/>
+      <Contact />
+      <Footer />
     </div>
   )
 }

@@ -10,6 +10,7 @@ module.exports = {
       white: '#F6F5F2',
       abu: '#EEEEEE',
       dark: '#26355D',
+      success: '#00ff9c',
     },
     fontFamily: {
       fightree: ['Figtree', 'sans-serif'],
