@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import { FaAirbnb, FaPhone, FaRocket, FaUserAlt } from 'react-icons/fa'
-
+  
 const Navbar = () => {
   return (
     <div className="fixed top-2 left-1/2 transform -translate-x-1/2 w-1/2 bg-secondary rounded-2xl h-15 z-50 transition-transform duration-300 ease-in-out hover:translate-y-1 hover:shadow-lg ">
@@ -19,6 +19,7 @@ const Navbar = () => {
           </Link>
 
           <Link
+      
             to="project"
             smooth={true}
             duration={700}
