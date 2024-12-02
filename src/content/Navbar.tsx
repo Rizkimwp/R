@@ -35,7 +35,7 @@ const Navbar = () => {
             delay={100}
             className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-navbar cursor-pointer"
           >
-            EXPERIENCE
+            TOOLS
           </Link>
           <Link
             to="contact"

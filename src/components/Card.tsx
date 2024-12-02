@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 interface CardProps {
   title: string
   iconImageUrl: string[]
   imageUrl: string
+  link:string
 }
 
-const Card: React.FC<CardProps> = ({ title, iconImageUrl, imageUrl }) => {
+const Card: React.FC<CardProps> = ({link, title, iconImageUrl, imageUrl }) => {
   return (
+    <Link to={link}>
     <div className=" w-4/5 rounded overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
       <img className="w-full" src={imageUrl} alt={title} />
       <div className="px-6 py-4">
@@ -20,6 +23,7 @@ const Card: React.FC<CardProps> = ({ title, iconImageUrl, imageUrl }) => {
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 

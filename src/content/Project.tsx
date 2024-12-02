@@ -1,19 +1,40 @@
 import React from 'react'
 import Card from '../components/Card'
 const CardProps = [
-  { title: 'Website CMS Puskesmas', url: '/asset/puskesmas.png', urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'] },
+  { title: 'Website CMS Puskesmas', link:'',url: '/asset/puskesmas.png', urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'] },
   {
     title: 'Website E-Commerce Puspiptek',
+    link:'',
     url: '/asset/puspiptek.png',
     urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'],
   },
   {
     title: 'PPDB App Platform',
+    link:'',
     url: '/asset/ppdb.png',
     urlIcon: ['/logo/logo192.png', '/logo/typescript.png', '/logo/mui.png', '/logo/vite.png', '/logo/postgresql.png', '/logo/nest.png'],
   },
   {
     title: 'Extrakurikuler App',
+    link:'',
+    url: '/asset/eskul.png',
+    urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'],
+  },
+  {
+    title: 'Form Login',
+    link:'/login',
+    url: '/asset/login.png',
+    urlIcon: ['/logo/tailwind.png', '/logo/logo192.png'],
+  },
+  {
+    title: 'Calculator',
+    link:'/calculator',
+    url: '/asset/calculator.png',
+   urlIcon: ['/logo/tailwind.png', '/logo/logo192.png'],
+  },
+  {
+    title: 'Stack Game',
+    link:'/stackgame',
     url: '/asset/eskul.png',
     urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'],
   },
@@ -40,7 +61,7 @@ const Project = () => {
         <div className="container mx-auto  grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-7  p-4">
           {CardProps.map((f, i) => (
             <div key={i} className="flex  justify-center" data-aos="flip-up" data-aos-easing="linear" data-aos-duration="1000">
-              <Card title={f.title} iconImageUrl={f.urlIcon} imageUrl={f.url} />
+              <Card link={f.link} title={f.title} iconImageUrl={f.urlIcon} imageUrl={f.url} />
             </div>
           ))}
         </div>
