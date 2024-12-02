@@ -9,7 +9,7 @@ const Contact = () => {
           <img src="./asset/handshake.png" alt="" className="object-contain h-28 w-28" />
         </div>
 
-        <h3 className="fa fa-text-height font-semibold mt-4 text-3xl" aria-hidden="true">
+        <h3 className="fa text-center fa-text-height font-semibold mt-4 text-3xl" aria-hidden="true">
           Tell me about yout next project
         </h3>
         <div className="flex m-4">

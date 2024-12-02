@@ -14,7 +14,8 @@ const Noroute = () => {
       <TestimonialCarousel />
       <Experience />
       <Contact />
-      <Footer /></>
+      <Footer />
+      </>
     )
 }
 

@@ -1,4 +1,5 @@
+---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/username/public_html
-    - /bin/cp -R * $DEPLOY_PATH
+    - export DEPLOYPATH=/home/rizr5951/public_html/
+    - /bin/cp -r /home/rizr5951/repositories/portofolio/* $DEPLOYPATH

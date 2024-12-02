@@ -10,8 +10,8 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({link, title, iconImageUrl, imageUrl }) => {
   return (
-    <Link to={link}>
-    <div className=" w-4/5 rounded overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
+    <Link to={link} target='_blank' className='items-center'>
+    <div className="rounded overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
       <img className="w-full" src={imageUrl} alt={title} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{title}</div>
