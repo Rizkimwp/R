@@ -10,7 +10,7 @@ const CardProps = [
   },
   {
     title: 'PPDB App Platform',
-    link: '',
+    link: 'http://devpmb.sasmitajaya.sch.id/',
     url: '/asset/ppdb.png',
     urlIcon: ['/logo/logo192.png', '/logo/typescript.png', '/logo/mui.png', '/logo/vite.png', '/logo/postgresql.png', '/logo/nest.png'],
   },
@@ -18,6 +18,12 @@ const CardProps = [
     title: 'Extrakurikuler App',
     link: '',
     url: '/asset/eskul.png',
+    urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'],
+  },
+  {
+    title: 'Pos Indonesia',
+    link: 'https://posindonesia.rizkimaulana.site/',
+    url: '/asset/posindonesia.png',
     urlIcon: ['/logo/laravel.png', '/logo/bootstrap.png', '/logo/mysql.png'],
   },
   {
