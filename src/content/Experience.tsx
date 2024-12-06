@@ -23,11 +23,11 @@ const Experience = () => {
           <div className="flex flex-col md:flex-row items-center justify-center relative">
             <div className="md:h-10 md:w-64 h-7 w-40 bg-navbar bg-opacity-20 top-10 -rotate-10 absolute md:left-0 -rotate-8 md:-rotate-6"></div>
             <img src="/logo/rocket.png" alt="Logo" className="w-10 h-10 md:w-24 md:h-24 mb-1   md:mb-0 z-10" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" />
-            <div className="text-xl md:text-5xl font-semibold font-fightree z-10 md:ml-4 text-white">
+            <div className="text-xl md:text-5xl font-semibold font-playfair z-10 md:ml-4 text-white">
               <span className="font-extrabold text-white">SPECIALIZED</span> TOOLS
             </div>
           </div>
-          <div className="text-xl md:text-2xl font-semibold font-fightree mt-5 text-white text-opacity-50 mx-8 md:mx-0 text-center">
+          <div className="text-xl md:text-2xl font-semibold font-lora mt-5 text-white text-opacity-50 mx-8 md:mx-0 text-center">
             Several projects that I have created, from various applications and websites, some of which are used by the public and some are
             used personally.
           </div>

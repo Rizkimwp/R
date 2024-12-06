@@ -10,6 +10,8 @@ module.exports = {
       white: '#F6F5F2',
       abu: '#EEEEEE',
       dark: '#26355D',
+      navy: '#303551',
+      black: '#1E2233',
       success: '#00ff9c',
       color1: '#FF6347', // Warna untuk tetromino tipe 1
       color2: '#4682B4', // Warna untuk tetromino tipe 2
@@ -17,10 +19,15 @@ module.exports = {
       color4: '#FFD700', // Warna untuk tetromino tipe 4
       color5: '#8A2BE2', // Warna untuk tetromino tipe 5
       color6: '#FF4500', // Warna untuk tetromino tipe 6
-      color7: '#1E90FF', // Warna untuk tetromino tipe 7
+      color7: '#1E90FF',
+      transparent:'#FFFFFF00' // Warna untuk tetromino tipe 7
     },
     fontFamily: {
       fightree: ['Figtree', 'sans-serif'],
+      fig: ['Fig', 'sans-serif'],
+      playfair: ['Playfair Display', 'serif'],
+      lora: ['Lora', 'serif'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     fontWeight: {
       thin: 100,
@@ -32,7 +39,12 @@ module.exports = {
       extrabold: 800,
       black: 900,
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/public/asset/nordwall2.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    },
   },
   plugins: [],
 }

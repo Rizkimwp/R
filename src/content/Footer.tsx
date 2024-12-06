@@ -8,7 +8,7 @@ const Footer = () => {
           {' '}
           <i className="fas fa-copyright  "></i>&#169; Copyright Rizki Maulana
         </h2>
-        <ul className="flex  font-thin  space-x-2">
+        <ul className="flex  font-thin font-montserrat text-dark  space-x-2">
           <li>
             <Link
               className='hover:border-b-2 hover:mb-1 hover:text-secondary hover:border-primary'
