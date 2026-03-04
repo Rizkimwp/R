@@ -6,7 +6,7 @@ import { FaTiktok } from 'react-icons/fa';
 const data = {
     name: 'Rizky Maulana W.',
     title: 'Fullstack Developer — React, Nest, Flutter, Laravel',
-    short: `Saya membangun aplikasi web dan mobile dengan fokus pada pengalaman pengguna, kinerja, dan maintainability.`,
+    short: `Saya membangun aplikasi web dan mobile berbasis AI dengan fokus pada pengalaman pengguna, kinerja, dan maintainability.`,
     resume: '#',
     social: {
         github: 'https://github.com/Rizkimwp',
