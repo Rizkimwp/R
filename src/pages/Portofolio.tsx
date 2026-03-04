@@ -49,22 +49,28 @@ const data = {
             url: 'https://wjkcikande.com/'
         },
         {
+            title: 'Company Profile Yayasan Daarel Muflihin',
+            desc: '"Platform digital resmi Yayasan Daarel Muflihin yang dirancang untuk memperkuat branding institusi. Menampilkan profil lengkap, sistem pengelolaan konten (CMS) untuk blog dan publikasi karier, serta integrasi WhatsApp API untuk layanan bantuan responsif."',
+            tech: ['React', 'MySql', 'Typescript', 'Tailwind', 'Nest Js'],
+            url: 'https://daarelmuflihin.id/'
+        },
+        {
             title: 'PPDB App Platform',
             desc: 'Platform penerimaan siswa baru online lengkap dengan dashboard admin dan siswa.',
             tech: ['React', 'Material UI', 'NestJS', 'PostgreSQL'],
-            url: 'https://ppdb.sasmitajaya.sch.id/'
+            url: 'https://smpit.daarelmuflihin.id/'
         },
         {
-            title: 'Extrakurikuler App',
-            desc: 'Aplikasi extraturikuler untuk siswa dan guru di sekolah.',
-            tech: ['Laravel', 'Mysql', 'Bootstrap'],
-            url: 'https://alistiqomah.rizkimaulana.site/'
+            title: 'Fulusly App',
+            desc: 'Sistem manajemen keuangan pribadi yang terintegrasi dengan Bot Telegram untuk pencatatan transaksi secara instan. Memungkinkan pengguna memantau arus kas, kategori pengeluaran, dan laporan finansial harian langsung melalui aplikasi pesan.',
+            tech: ['Laravel', 'Mysql', 'Tailwind', 'Next JS', 'Telegram Bot API'],
+            url: 'https://fulusly.my.id/'
         },
         {
-            title: 'Company Profile & Cek Resi, Pos Indonesia',
-            desc: 'Website company profile dan cek resi untuk PT Pos Indonesia (Persero).',
-            tech: ['Laravel', 'Mysql', 'Bootstrap'],
-            url: 'https://posindonesia.rizkimaulana.site/'
+            title: 'WhatsApp Group Agregator',
+            desc: 'Sistem ekstraksi otomatis untuk memantau tautan dari grup WhatsApp dan merangkum inti konten secara instan.',
+            tech: ['Python', 'MySQL', 'Tailwind', 'Node JS', 'Nest Js', 'Open AI', 'Grock V1'], // Tambahkan 'Python' atau 'OpenAI' jika ada
+            url: 'https://agregator.womanager.id/'
         },
     ]
 };
