@@ -69,7 +69,7 @@ const data = {
         {
             title: 'WhatsApp Group Agregator',
             desc: 'Sistem ekstraksi otomatis untuk memantau tautan dari grup WhatsApp dan merangkum inti konten secara instan.',
-            tech: ['Python', 'MySQL', 'Tailwind', 'Node JS', 'Nest Js', 'Open AI', 'Grock V1'], // Tambahkan 'Python' atau 'OpenAI' jika ada
+            tech: ['Python', 'MySQL', 'Tailwind', 'Node JS', 'Next Js', 'Open AI', 'Grock V1'], // Tambahkan 'Python' atau 'OpenAI' jika ada
             url: 'https://agregator.womanager.id/'
         },
     ]
