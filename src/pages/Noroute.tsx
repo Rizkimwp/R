@@ -6,18 +6,20 @@ import Profile from "../content/Profile"
 import Project from "../content/Project"
 import Testimonial from "../content/Testimonial"
 import TestimonialCarousel from '../content/Testimonial'
+import Portfolio from "./Portofolio"
 const Noroute = () => {
-    return(
-        <>
-        <Jumbotron />
+  return (
+    <>
+      <Portfolio />
+      {/* <Jumbotron />
       <Profile />
       <Project />
-      <TestimonialCarousel /> 
+      <TestimonialCarousel />
       <Experience />
       <Contact />
-      <Footer />
-      </>
-    )
+      <Footer /> */}
+    </>
+  )
 }
 
 export default Noroute

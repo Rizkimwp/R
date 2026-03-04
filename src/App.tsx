@@ -23,14 +23,12 @@ function App() {
   const {board} = useTetris()
   return (
     <div className="w-5/6">
-      <Navbar />
+
       <Suspense fallback={'Loading...'}>
      
     <Routes>
       <Route path='/' element={<Noroute/>}/>
-      <Route path='/calculator' element={<Calculator/>} />
-      <Route path='/login' element={<Login/>} />
-      <Route path='/stackgame' element={<StackGame/>} />
+
     </Routes>
       </Suspense>
      
