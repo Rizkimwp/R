@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, DownloadCloud, Github, Linkedin, Instagram, ArrowRight, Youtube } from 'lucide-react';
 import { FaTiktok } from 'react-icons/fa';
+import { GitHubCalendar } from 'react-github-calendar';
 
 const data = {
     name: 'Rizky Maulana W.',
@@ -176,97 +177,136 @@ export default function Portfolio() {
 
 
                 {/* Konten kanan scrollable */}
-                <main className="flex-1 px-4 pt-10 lg:px-8"  >
-                    {/* About */}
+                <main className="flex-1 px-4 pt-10 lg:px-8" >
+
+                    {/* 🔥 Cursor Glow Effect (lebih smooth) */}
                     <div
-                        className="absolute top-0 left-0 w-full h-full pointer-events-none rounded-xl mix-blend-screen"
+                        className="absolute top-0 left-0 w-full h-full pointer-events-none rounded-xl"
                         style={{
-                            background: `radial-gradient(circle 700px at ${cursorPos.x}px ${cursorPos.y}px, rgba(81,203,207,0.15), transparent 60%)`,
-                            transition: "background 0.1s",
+                            background: `radial-gradient(circle 600px at ${cursorPos.x}px ${cursorPos.y}px, rgba(81,203,207,0.12), transparent 70%)`,
+                            transition: "background 0.15s ease-out",
                         }}
                     />
-                    <div className="flex flex-col p-6 lg:hidden">
-                        <h1 className="text-3xl font-bold">{data.name}</h1>
-                        <h2 className="mt-2 text-lg text-slate-300">{data.title}</h2>
+
+                    {/* 🔥 Mobile Header */}
+                    <div className="flex flex-col p-6 border lg:hidden backdrop-blur-md bg-white/5 rounded-xl border-white/10">
+                        <h1 className="text-3xl font-bold text-white">{data.name}</h1>
+                        <h2 className="mt-2 text-lg text-[#51CBCF]">{data.title}</h2>
                         <p className="mt-4 text-sm leading-relaxed text-slate-400">{data.short}</p>
 
                         <div className="flex gap-4 mt-6 text-slate-400">
-                            <a href={data.social.github} className="hover:text-white"><Github size={20} /></a>
-                            <a href={data.social.linkedin} className="hover:text-white"><Linkedin size={20} /></a>
-                            <a href={data.social.instagram} className="hover:text-white"><Instagram size={20} /></a>
-                            <a href={data.social.youtube} className="hover:text-white"><Youtube size={20} /></a>
-                            <a href={data.social.tiktok} className="hover:text-white"><FaTiktok size={20} /></a>
+                            {[
+                                { icon: <Github size={20} />, link: data.social.github },
+                                { icon: <Linkedin size={20} />, link: data.social.linkedin },
+                                { icon: <Instagram size={20} />, link: data.social.instagram },
+                                { icon: <Youtube size={20} />, link: data.social.youtube },
+                                { icon: <FaTiktok size={20} />, link: data.social.tiktok },
+                            ].map((item, i) => (
+                                <a key={i} href={item.link} className="transition hover:text-white hover:scale-110">
+                                    {item.icon}
+                                </a>
+                            ))}
+
                             <a
                                 href="/asset/CV.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                className="transition hover:text-white hover:scale-110"
                             >
                                 <DownloadCloud size={20} />
                             </a>
                         </div>
                     </div>
+
+                    {/* 🔥 About */}
                     <Section id="about" title="About">
-                        <p className="leading-relaxed text-slate-300">
-                            Saya seorang pengembang yang bersemangat menciptakan antarmuka pengguna yang mudah diakses dan sempurna, memadukan desain yang cermat dengan rekayasa yang tangguh. Pekerjaan favorit saya terletak di persimpangan antara desain dan pengembangan, menciptakan pengalaman
-                            yang tidak hanya tampak hebat tetapi juga dirancang dengan cermat untuk performa dan kegunaan.
-                            <br />
-                            <br />
-                            Saat ini, saya adalah Fullstack Developer di <span className='font-bold text-white'>PT Wonokoyo Jaya Kusuma </span>
-                            dengan spesialisasi aksesibilitas. Saya berkontribusi dalam pembuatan dan pemeliharaan aplikasi web dan mobile beserta API backend,
-                            memastikan platform kami memenuhi standar kebutuhan produksi guna mempercepat dan mengefisiensi waktu.
-                            <br />
-                            <br />
-                            Sebelumnya, saya berkesempatan mengembangkan perangkat lunak di berbagai lingkungan — mulai dari lembaga pendidikan dan perusahaan besar hingga perusahaan rintisan dan studio produk digital kecil.
-                            Selain itu, saya juga aktif berkontribusi pada platform media sosial seperti <span className='font-bold text-white'>GitHub </span> dan <span className='font-bold text-white'>Tiktok</span> sebagai sarana berbagi pengetahuan dan pengalaman.
-                            <br />
-                            <br />
-                            Di waktu luang, saya menikmati berbagai aktivitas yang membantu menjaga keseimbangan hidup. Saya suka nge-gym untuk menjaga kesehatan fisik dan mental, bermain game untuk bersenang-senang dan mengasah strategi, serta membaca buku filsafat untuk memperluas wawasan dan memahami berbagai sudut pandang kehidupan.
+                        <p className="leading-relaxed text-slate-300 text-[15px]">
+                            Saya seorang pengembang yang bersemangat menciptakan antarmuka pengguna yang mudah diakses dan sempurna,
+                            memadukan desain dengan rekayasa yang tangguh.
+
+                            <br /><br />
+
+                            Saya berpengalaman 2 tahun sebagai <span className="font-semibold text-white">Fullstack Developer</span>, sekarang di
+                            <span className="font-semibold text-[#51CBCF]"> PT Wonokoyo Jaya Kusuma</span>, berfokus pada pengembangan Automation
+                            aplikasi web, mobile, dan API backend untuk meningkatkan efisiensi produksi.
+
+                            <br /><br />
+
+                            Saya juga aktif berbagi di <span className="font-semibold text-white">GitHub</span> dan
+                            <span className="font-semibold text-white"> Platform Media Sosial</span>.
+
+                            <br /><br />
+
+                            Di waktu luang, saya suka olahraga angkat beban, belajar hal baru, dan mengeksplorasi teknologi terkini untuk terus berkembang sebagai pengembang.
                         </p>
                     </Section>
 
-                    {/* Experience */}
+                    {/* 🔥 GitHub Section (lebih standout) */}
+                    <Section id="github" title="GitHub Activity">
+                        <div className="p-4 border rounded-xl bg-white/5 border-white/10 backdrop-blur-md">
+                            <GitHubCalendar username="Rizkimwp" />
+                        </div>
+                    </Section>
+
+                    {/* 🔥 Experience */}
                     <Section id="experience" title="Experience">
                         <div className="space-y-6">
                             {data.experiences.map((exp, idx) => (
                                 <div
                                     key={idx}
-                                    className="p-6 transition-all duration-300 shadow-sm rounded-xl hover:bg-white/10 group"
+                                    className="p-6 transition border rounded-xl border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 hover:-translate-y-1 hover:shadow-lg"
                                 >
-                                    <div className="text-sm text-slate-400">{exp.period}</div>
-                                    <h3 className="flex items-center gap-2 mt-1 font-medium">
-                                        <a href={exp.url} target="_blank" className="hover:underline text-[#51CBCF] flex items-center gap-1">
-                                            {exp.role} - {exp.company}{" "}
-                                            <ArrowRight
-                                                className="transition-transform duration-300 group-hover:-rotate-45"
-                                                size={16}
-                                            />
+                                    <div className="text-xs text-slate-400">{exp.period}</div>
+
+                                    <h3 className="flex items-center gap-2 mt-2 font-medium text-white">
+                                        <a
+                                            href={exp.url}
+                                            target="_blank"
+                                            className="flex items-center gap-1 text-[#51CBCF] hover:underline"
+                                        >
+                                            {exp.role} - {exp.company}
+                                            <ArrowRight className="transition group-hover:-rotate-45" size={16} />
                                         </a>
                                     </h3>
+
                                     <p className="mt-2 text-sm leading-relaxed text-slate-300">{exp.desc}</p>
+
                                     <div className="flex flex-wrap gap-2 mt-3 text-xs">
                                         {exp.tech.map((t) => (
-                                            <span key={t} className="px-2 py-1 border rounded-md text-[#51CBCF]">
+                                            <span
+                                                key={t}
+                                                className="px-2 py-1 border border-[#51CBCF]/30 rounded-md text-[#51CBCF] bg-[#51CBCF]/10"
+                                            >
                                                 {t}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
-
                             ))}
                         </div>
                     </Section>
 
-
-                    {/* Projects */}
+                    {/* 🔥 Projects */}
                     <Section id="projects" title="Projects">
-                        <div className="space-y-6">
+                        <div className="grid gap-6 md:grid-cols-2">
                             {data.projects.map((p, idx) => (
-                                <article key={idx} className="p-6 border rounded-xl bg-white/2">
-                                    <h3 className="text-lg font-medium"><a href={p.url} target='_blank' className="hover:underline">{p.title}</a></h3>
+                                <article
+                                    key={idx}
+                                    className="p-6 transition border rounded-xl bg-white/5 border-white/10 backdrop-blur-md hover:shadow-xl hover:-translate-y-1"
+                                >
+                                    <h3 className="text-lg font-semibold text-white">
+                                        <a href={p.url} target="_blank" className="hover:underline">
+                                            {p.title}
+                                        </a>
+                                    </h3>
+
                                     <p className="mt-2 text-sm text-slate-300">{p.desc}</p>
-                                    <div className="flex flex-wrap gap-2 mt-3 text-xs text-slate-400">
+
+                                    <div className="flex flex-wrap gap-2 mt-3 text-xs">
                                         {p.tech.map((t) => (
-                                            <span key={t} className="px-2 py-1 border rounded-md">{t}</span>
+                                            <span key={t} className="px-2 py-1 border rounded-md text-slate-300 border-white/10">
+                                                {t}
+                                            </span>
                                         ))}
                                     </div>
                                 </article>
@@ -274,16 +314,7 @@ export default function Portfolio() {
                         </div>
                     </Section>
 
-                    {/* Contact */}
-                    {/* <Section id="contact" title="Contact">
-                        <p className="text-slate-300">Jika tertarik bekerja sama, kirim email atau hubungi lewat LinkedIn.</p>
-                        <div className="mt-6">
-                            <a href={`mailto:your@email.com`} className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white/7 hover:bg-white/10">
-                                <Mail size={16} /> Email Saya
-                            </a>
-                        </div>
-                    </Section> */}
-
+                    {/* 🔥 Footer */}
                     <footer className="py-12 text-sm text-center border-t border-white/10 text-slate-500">
                         © {new Date().getFullYear()} {data.name}
                     </footer>
