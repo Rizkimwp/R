@@ -6,7 +6,7 @@ import { GitHubCalendar } from 'react-github-calendar';
 
 const data = {
     name: 'Rizky Maulana W.',
-    title: 'Fullstack Developer — React, Nest, Flutter, Laravel',
+    title: 'Fullstack Developer — React, Next, Flutter, Laravel',
     short: `Saya membangun aplikasi web dan mobile berbasis AI dengan fokus pada pengalaman pengguna, kinerja, dan maintainability.`,
     resume: '#',
     social: {
@@ -125,7 +125,7 @@ export default function Portfolio() {
     };
     return (
         <div className="w-screen mx-auto bg-[#0a192f] text-abu relative" onMouseMove={handleMouseMove}>
-            <div className="container flex mx-auto">
+            <div className="container flex flex-col mx-auto lg:flex-row"> {/* 2. Tambahkan flex-col agar sidebar & main tumpuk di mobile */}
                 {/* Sidebar kiri */}
                 {/* Section muncul hanya di mobile */}
 
@@ -181,7 +181,7 @@ export default function Portfolio() {
 
                     {/* 🔥 Cursor Glow Effect (lebih smooth) */}
                     <div
-                        className="absolute top-0 left-0 w-full h-full pointer-events-none rounded-xl"
+                        className="absolute top-0 left-0 w-full h-full pointer-events-none rounded-xl mix-blend-screen"
                         style={{
                             background: `radial-gradient(circle 600px at ${cursorPos.x}px ${cursorPos.y}px, rgba(81,203,207,0.12), transparent 70%)`,
                             transition: "background 0.15s ease-out",
