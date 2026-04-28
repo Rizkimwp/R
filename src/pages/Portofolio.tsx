@@ -75,7 +75,7 @@ const data = {
         },
         {
             title: 'Qismah',
-            desc: 'Sistem Aplikasi kalkulator faraidh berbasis ijtihad Mazhab Syafii. Transparan, presisi, dan sesuai syariat dalam antarmuka yang belum pernah ada sebelumnya.',
+            desc: 'Sistem Aplikasi Pembagian Harta Waris berbasis ijtihad Mazhab Syafii. Transparan, presisi, dan sesuai syariat dalam antarmuka yang belum pernah ada sebelumnya.',
             tech: ['Next JS', 'Tailwind'], // Tambahkan 'Python' atau 'OpenAI' jika ada
             url: 'https://qismah.rizkimaulana.site/'
         },
