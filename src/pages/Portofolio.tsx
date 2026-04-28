@@ -73,6 +73,12 @@ const data = {
             tech: ['Python', 'MySQL', 'Tailwind', 'Node JS', 'Next Js', 'Open AI', 'Grock V1'], // Tambahkan 'Python' atau 'OpenAI' jika ada
             url: 'https://agregator.womanager.id/'
         },
+        {
+            title: 'Qismah',
+            desc: 'Sistem Aplikasi kalkulator faraidh berbasis ijtihad Mazhab Syafii. Transparan, presisi, dan sesuai syariat dalam antarmuka yang belum pernah ada sebelumnya.',
+            tech: ['Next JS', 'Tailwind'], // Tambahkan 'Python' atau 'OpenAI' jika ada
+            url: 'https://qismah.rizkimaulana.site/'
+        },
     ]
 };
 
